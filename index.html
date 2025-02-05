@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <title>my Portfolio</title>
+  </head>
+  <body>
+    <!-- navbar-section -->
+    <div class="navbar">
+      <div class="logo">Purnima Sahoo</div>
+      <div class="nav-box">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          
+          <!-- <li><a href="#education">Education</a></li> -->
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <!-- <div class="mode"></div> -->
+        <button id="theme-toggle">
+          <span id="icon">🌞</span>
+          <!-- <i class="ri-contrast-2-fill" id="icon"></i> -->
+        </button>
+        
+        <div class="cv-download">
+          <button class="btn" onclick="window.open('./assets/resume.pdf')">Download CV</button>
+        </div>
+        
+      </div>
+    </div>
+    <!-- hamburger-nav -->
+    <nav id="hamburger-nav">
+      <div class="logo">Purnima Sahoo</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          
+          <!-- <li><a href="#education" onclick="toggleMenu()">Education</a></li> -->
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <!-- hero-section -->
+
+    <div class="hero-section">
+      <div class="section__text">
+        <h1 class="title">Hello, I'm Purnima</h1>
+
+        <p>
+          I'm a <span>frontend developer</span> (Java Script & React Js) with a
+          focus on creating (and occasionally designing) exceptional digital
+          experiences that are fast, accessible, visually appealing, and
+          responsive. 
+        </p>
+        <div class="location">
+          <i class="ri-map-pin-line"></i>
+          <p>Bhubaneswar,India</p>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/purnima-sahoo-906b83331/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/PurnimaSahoo20'"
+          />
+        </div>
+      </div>
+
+      <div class="section__pic-container">
+        <img src="./assets/profile.jpg" alt=" profile picture" />
+      </div>
+    </div>
+
+    <!-- about-me section -->
+    <div class="about-me" id="about">
+      <span>About me</span>
+      <div class="about-me-content">
+        <div class="about-me-left">
+          <img class="about-me-pic" src="./assets/aboutme-pic.jpg" alt="" />
+        </div>
+        <div class="about-me-desc">
+          <h2>Know me more...</h2>
+          <div class="para">
+            <p>
+              I am a passionate and dedicated web developer with a strong foundation in frontend technologies like HTML, CSS, 
+              JavaScript, and ReactJS. My academic journey reflects my commitment to excellence—I completed my Bachelor's in 
+              Computer Science with a stellar CGPA of 8.9 and am currently pursuing my Master's in Computer Application to further
+               enhance my technical expertise.
+
+
+            </p>
+            <p>
+              I have actively worked on multiple projects, including an Amazon Shopping Website Clone(using HTML & CSS),
+               a Responsive Portfolio Website(using HTML, CSS & JS) and multiple react and js projects . These projects showcase
+                my ability to build interactive and user-friendly web applications. 
+                Additionally, during my internship as a Web Developer at Exposys DataLabs, 
+                I contributed to developing a mass mail dispatching system, demonstrating my problem-solving skills 
+                and ability to handle real-world applications.
+
+            </p>
+            <p>
+              I am always eager to learn and improve, constantly exploring new technologies to stay ahead in the ever-evolving 
+              tech landscape. My ability to write clean, efficient, and maintainable code makes me a valuable asset to any team. 
+              I am confident that my dedication, technical skills, and problem-solving approach will make me a strong contributor
+               to any company looking for a skilled web developer.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+    <!--Education & skill-section -->
+    <div id="exp-skill">
+      
+        <div class="about-containers">
+  
+            <div class="details-container">
+                <img src="./assets/education.png" alt="Education icon" class="icon" />
+  
+                <h3>Education</h3>
+                 <ul>
+                  <li>Bsc Computer Science(2021-24)</li>
+                  <p>Fakir Mohan Autonomous college,Balasore</p>
+                 </ul>
+
+                 <ul>
+                  <li>Master of Computer Application(MCA)(2024-26)</li>
+                  <p>Veer Surendra Sai University of Technology(VSSUT),Burla</p>
+                 </ul>
+                 
+                <h3>Experience</h3>
+                 <ul>Ex-Intern at Exposys Data Lab</ul>
+            </div>
+            <div class="details-container">
+                <img src="./assets/experience.png" alt="" class="icon">
+                <h3>Skills</h3>
+                <div class="skill-box">
+                    <span class="title">HTML</span>
+                    <div class="skill-bar">
+                        <span class="skill-per html">
+                            <span class="tooltip">80%</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <span class="title">CSS</span>
+                    <div class="skill-bar">
+                        <span class="skill-per css">
+                            <span class="tooltip">70%</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <span class="title">Java</span>
+                    <div class="skill-bar">
+                        <span class="skill-per java">
+                            <span class="tooltip">60%</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <span class="title">JavaScript</span>
+                    <div class="skill-bar">
+                        <span class="skill-per javascript">
+                            <span class="tooltip">80%</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="skill-box">
+                  <span class="title">React js</span>
+                  <div class="skill-bar">
+                      <span class="skill-per react">
+                          <span class="tooltip">65%</span>
+                      </span>
+                  </div>
+              </div>
+            </div>
+        </div>
+        
+    
+    </div>
+    <!-- project-section -->
+     <div class="project-section" id="projects">
+         <span>Projects</span>
+         <p>Some of my works</p>
+         <div class="project-div">
+          <div class="project-1 project-box">
+            <div class="img-div-1 img-box">
+              <img src="./assets/project-1.png" alt="">
+            </div>
+            <div class="text-div">
+              <h1>Travel Mile</h1>
+              Here in this Travel Mile project I used HTML and CSS.
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/PurnimaSahoo20/Travel-miles'">
+                    Github
+                </button>
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://purnimasahoo20.github.io/Travel-miles/'">
+                    Live Demo
+                </button>
+            </div>
+            </div>
+          </div>
+          <div class="project-2 project-box">
+            
+            <div class="text-div">
+              <h1>Amazon Clone</h1>
+              I made this Amazon Clone using HTML and CSS.
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/PurnimaSahoo20/amazon-clone'">
+                    Github
+                </button>
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://timely-gnome-c8abe4.netlify.app/'">
+                    Live Demo
+                </button>
+            </div>
+            </div>
+            <div class="img-div-2 img-box">
+              <img src="./assets/project-2.png" alt="" srcset="">
+            </div>
+          </div>
+          <div class="project-3 project-box">
+            <div class="img-div-3 img-box">
+              <img src="./assets/project-3.png" alt="">
+            </div>
+            <div class="text-div">
+              <h1>Mass Mail Dispatcher</h1>
+              Here in this Project I used HTML ,CSS, JavaScript.
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/PurnimaSahoo20/mass-mail-dispatcher'">
+                    Github
+                </button>
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://purnimasahoo20.github.io/mass-mail-dispatcher/'">
+                    Live Demo
+                </button>
+            </div>
+          </div>
+        </div>
+        <div class="project-4 project-box">
+            
+          <div class="text-div">
+            <h1>Todo List</h1>
+            I made this Todo List project using react.
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/PurnimaSahoo20/todoList-using-react'">
+                  Github
+              </button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://purnimasahoo20.github.io/todoList-using-react/'">
+                  Live Demo
+              </button>
+          </div>
+          </div>
+          <div class="img-div-4 img-box">
+            <img src="./assets/project-4.png" alt="" srcset="">
+          </div>
+        </div>
+     </div>
+
+     <!-- testimonial-section
+     <div class="testimonial-container">
+      <div class="testimonial-content">
+          <h1 class="testimonial-title">
+             What Others Say About Me
+          </h1>
+          <div class="testimonial-grid">
+               card 1 
+              <div class="testimonial-card">
+                  <div class="testimonial-text">
+                      <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam qui alias,
+                           id tempore modi nemo?
+                      </p>
+                  </div>
+                  <div class="testimonial-avtar">
+                      <img src="./assets/about-pic.png" alt="" class="test-img">
+                  </div>
+                  <div class="testimonial-details">
+                       <h2>
+                         Jhon Deo
+                       </h2>
+                       <p>
+                          Lorem ipsum dolor sit amet.
+                       </p>
+                  </div>
+              </div>
+               card 2 
+              <div class="testimonial-card">
+                  <div class="testimonial-text">
+                      <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam qui alias,
+                           id tempore modi nemo?
+                      </p>
+                  </div>
+                  <div class="testimonial-avtar">
+                      <img src="./assets/about-pic.png" alt="" class="test-img">
+                  </div>
+                  <div class="testimonial-details">
+                       <h2>
+                         Jhon Deo
+                       </h2>
+                       <p>
+                          Lorem ipsum dolor sit amet.
+                       </p>
+                  </div>
+              </div>
+               card-3 
+              <div class="testimonial-card">
+                  <div class="testimonial-text">
+                      <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam qui alias,
+                           id tempore modi nemo?
+                      </p>
+                  </div>
+                  <div class="testimonial-avtar">
+                      <img src="./assets/about-pic.png" alt="" class="test-img">
+                  </div>
+                  <div class="testimonial-details">
+                       <h2>
+                         Jhon Deo
+                       </h2>
+                       <p>
+                          Lorem ipsum dolor sit amet.
+                       </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div> -->
+   <!-- contact-section -->
+  <section id="contact">
+    
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container para1">
+        <p>What’s next? Feel free to reach out to me if you are looking for a developer, 
+          have a query, or simply want to connect.</p>
+        
+    </div>
+    <div class="contact-info-container email">
+      <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+      <p><a href="https://mail.google.com">purnimasahoo235@gmail.com</a></p>
+  </div>
+  <div class="contact-info-container linkedin">
+      <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+      <p><a href="https://www.linkedin.com/in/purnima-sahoo-906b83331/">LinkedIn</a></p>
+  </div>
+</section>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
